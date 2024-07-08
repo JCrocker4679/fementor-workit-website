@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							fraunces: ['Fraunces', 'sans-serif'],
+							manrope: ['Manrope', 'sans-serif'],
+						},
+						colors: {
+							workitBlue: '#24053E',
+							workitGreen: '#44FFA1',
+							workitGrey: '#584D62',
+							workitPink: '#FCF8FF',
+						},
+					},
+				},
+			};
+		</script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Workit landing page</title>
+	</head>
+	<body class="font-manrope text-workitBlue overflow-x-hidden">
+		<!-- NAV SECTION -->
+		<nav class="bg-workitBlue">
+			<div class="container mx-auto py-8 px-4">
+				<div class="flex justify-between align-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="97"
+						height="26"
+						viewBox="0 0 97 26"
+					>
+						<path
+							fill="#FFF"
+							d="m10.528 25 4.064-11.2L18.624 25h4.16l6.048-17.472H23.84l-3.392 10.144-3.776-10.144h-4.16L8.704 17.672 5.312 7.528H.352L6.368 25h4.16Zm28.324.384c1.728 0 3.296-.395 4.704-1.184a9.132 9.132 0 0 0 3.376-3.248c.842-1.376 1.264-2.939 1.264-4.688 0-1.77-.422-3.339-1.264-4.704a9.173 9.173 0 0 0-3.376-3.232c-1.408-.79-2.976-1.184-4.704-1.184-1.728 0-3.302.395-4.72 1.184a9.138 9.138 0 0 0-3.392 3.232c-.843 1.365-1.264 2.933-1.264 4.704 0 1.75.42 3.312 1.264 4.688a9.097 9.097 0 0 0 3.392 3.248c1.418.79 2.992 1.184 4.72 1.184Zm0-4.32c-1.302 0-2.363-.448-3.184-1.344-.822-.896-1.232-2.048-1.232-3.456 0-1.387.41-2.533 1.232-3.44.82-.907 1.882-1.36 3.184-1.36 1.3 0 2.357.453 3.168 1.36.81.907 1.216 2.053 1.216 3.44 0 1.408-.406 2.56-1.216 3.456-.811.896-1.867 1.344-3.168 1.344ZM55.367 25v-9.408c0-1.301.363-2.31 1.088-3.024.725-.715 1.675-1.072 2.848-1.072h1.504v-4.16h-1.024c-1.067 0-2.01.197-2.832.592-.821.395-1.456 1.136-1.904 2.224V7.528h-4.48V25h4.8Zm11.908 0v-5.344l1.92-2.112L73.643 25h5.44l-6.304-10.432 6.336-7.04h-5.92l-5.92 6.304V.776h-4.8V25h4.8ZM83.598 4.68V1.16h-1.92v3.52h1.92Zm0 20.32V8.008h-1.92V25h1.92Zm11.012.192c.17 0 .405-.01.704-.032.298-.021.565-.064.8-.128v-1.76a11.29 11.29 0 0 1-1.216.096c-.768 0-1.355-.139-1.76-.416a2.012 2.012 0 0 1-.816-1.088 4.628 4.628 0 0 1-.208-1.376V9.832h3.712V8.008h-3.712V4.04h-1.92v1.824c0 .661-.176 1.184-.528 1.568-.352.384-.838.576-1.456.576h-1.216v1.824h3.2v10.656c0 1.536.378 2.704 1.136 3.504.757.8 1.85 1.2 3.28 1.2Z"
+						/>
+					</svg>
+					<button
+						class="font-manrope text-white underline underline-offset-8 decoration-workitGreen decoration-2 hover:text-workitGreen hover:transition-all"
+					>
+						Apply for Access
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- HERO -->
+		<section class="bg-workitBlue w-full">
+			<div
+				class="container mx-auto flex flex-col items-center justify-center px-6 relative"
+			>
+				<img
+					class="absolute top-0 -left-64 hidden md:block"
+					src="assets/images/bg-pattern-1.svg"
+					alt=""
+				/>
+				<div class="mt-10 text-center max-w-2xl">
+					<h1
+						class="text-5xl md:text-7xl text-white font-fraunces tracking-wide leading-12"
+					>
+						Data
+						<span
+							class="underline underline-offset-8 decoration-workitGreen decoration-2"
+							>tailored</span
+						>
+						to your needs.
+					</h1>
+					<button
+						class="text-workitBlue py-4 px-8 bg-workitGreen font-manrope font-bold mt-10 hover:bg-transparent hover:text-workitGreen border-2 border-workitGreen"
+					>
+						Learn More
+					</button>
+				</div>
+				<img
+					class="absolute -bottom-20 -right-40 hidden md:block"
+					src="assets/images/bg-pattern-2.svg"
+					alt=""
+				/>
+				<div
+					class="absolute -bottom-64 md:-bottom-96 lg:-bottom-[500px] w-[70%] max-w-[400px] min-w-[375px] md:max-w-[514px] lg:max-w-[767px]"
+				>
+					<img src="assets/images/image-hero.webp" alt="" />
+				</div>
+			</div>
+			<div class="bg-workitPink">
+				<div
+					class="bg-workitBlue h-32 md:h-64 w-[130%] -ml-[15%] rounded-b-[100%]"
+				></div>
+			</div>
+		</section>
+
+		<!-- CARDS -->
+
+		<section class="bg-workitPink">
+			<div
+				class="container flex lg:flex-row flex-col mx-auto pt-40 lg:pt-72 pb-24 items-center text-center md:text-left lg:text-center justify-center gap-12 lg:gap-12"
+			>
+				<div
+					class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-1 gap-4 lg:gap-12 md:w-full lg:w-auto"
+				>
+					<div
+						class="text-2xl text-center font-fraunces border-solid border-[1px] rounded-full border-workitBlue p-2 h-12 w-12 lg:h-16 lg:w-16 lg:p-4 row-span-1 col-span-1 md:row-span-2 lg:row-span-1 md:mt-8 md:ml-20 lg:ml-0 justify-self-center md:justify-self-start lg:justify-self-center"
+					>
+						1
+					</div>
+					<h2
+						class="font-fraunces text-3xl tracking-tight col-span-1 md:col-span-3 lg:col-span-1"
+					>
+						Actionable insights
+					</h2>
+					<p
+						class="tracking-wide font-light max-w-[40ch] md:max-w-[55ch] lg:max-w-[35ch] pretty col-span-1 md:col-span-3 lg:col-span-1"
+					>
+						Optimize your products, improve customer satisfaction and stay ahead
+						of the competition with our product data analytics.
+					</p>
+				</div>
+
+				<div
+					class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-1 items-center gap-4 lg:gap-12 md:w-full lg:w-auto"
+				>
+					<div
+						class="text-2xl text-center font-fraunces border-solid border-[1px] rounded-full border-workitBlue p-2 h-12 w-12 lg:h-16 lg:w-16 lg:p-4 row-span-1 col-span-1 md:row-span-2 lg:row-span-1 md:mt-8 md:ml-20 lg:ml-0 justify-self-center md:justify-self-start lg:justify-self-center"
+					>
+						2
+					</div>
+					<h2
+						class="font-fraunces text-3xl tracking-tight col-span-1 md:col-span-3 lg:col-span-1"
+					>
+						Data-driven decisions
+					</h2>
+					<p
+						class="tracking-wide font-light max-w-[40ch] md:max-w-[55ch] lg:max-w-[35ch] pretty col-span-1 md:col-span-3 lg:col-span-1"
+					>
+						Make data-driven decisions with our product data analytics. Our
+						AI-generated reports help you unlock insights hidden in your product
+						data.
+					</p>
+				</div>
+
+				<div
+					class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-1 items-center gap-4 lg:gap-12 md:w-full lg:w-auto"
+				>
+					<div
+						class="text-2xl text-center font-fraunces border-solid border-[1px] rounded-full border-workitBlue p-2 h-12 w-12 lg:h-16 lg:w-16 lg:p-4 row-span-1 col-span-1 md:row-span-2 lg:row-span-1 md:mt-8 md:ml-20 lg:ml-0 justify-self-center md:justify-self-start lg:justify-self-center"
+					>
+						3
+					</div>
+					<h2
+						class="font-fraunces text-3xl tracking-tight col-span-1 md:col-span-3 lg:col-span-1"
+					>
+						Always affordable
+					</h2>
+					<p
+						class="tracking-wide font-light max-w-[40ch] md:max-w-[55ch] lg:max-w-[35ch] pretty col-span-1 md:col-span-3 lg:col-span-1"
+					>
+						Always affordable pricing that scales with your business. Get
+						top-quality product data analytics services without hidden costs or
+						unexpected fees.
+					</p>
+				</div>
+			</div>
+			<div class="bg-white">
+				<div
+					class="bg-workitPink h-40 w-[130%] -ml-[15%] rounded-b-[100%]"
+				></div>
+			</div>
+		</section>
+
+		<!-- APPLY FOR ACCESS -->
+
+		<div
+			class="mx-auto container mt-32 flex flex-col md:flex-row justify-center items-center md:justify-start relative"
+		>
+			<img
+				src="assets/images/image-founder.webp"
+				alt="founder face"
+				class="rounded h-96 w-96 lg:h-[477px] lg:w-[477px] xl:ml-24 ml-2"
+			/>
+			<div
+				class="bg-workitBlue p-12 text-white text-center md:text-left w-[94%] md:w-[60%] block -mt-24 md:mt-0 md:absolute right-0 md:-bottom-20"
+			>
+				<h2
+					class="lg:ml-8 font-fraunces lg:text-5xl text-4xl lg:mb-10 mb-4 tracking-tight"
+				>
+					Be the first to test
+				</h2>
+				<p
+					class="lg:ml-8 tracking-wide lg:leading-8 leading-6 font-light lg:font-normal max-w-[65ch] md:text-md text-sm"
+				>
+					Hi, I'm Louis Graham, the founder of the company. Book a demo call
+					with me to become a beta tester for our app and kickstart your
+					company. Apply for access below and I’ll be in touch to schedule a
+					call.
+				</p>
+				<button
+					class="lg:ml-8 text-workitBlue py-4 px-8 bg-workitGreen font-manrope font-bold mt-10 hover:bg-transparent hover:text-workitGreen border-2 border-workitGreen"
+				>
+					Apply for access
+				</button>
+				<img
+					class="md:absolute -bottom-28 right-0 lg:right-28 lg:-bottom-20 hidden"
+					src="/starter-code/assets/images/bg-pattern-3.svg"
+					alt=""
+				/>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer
+			class="container mt-16 md:mt-40 lg:mt-60 mb-24 flex flex-col mx-auto items-center gap-10"
+		>
+			<img src="assets/images/logo-dark.svg" alt="" />
+			<div class="flex gap-8">
+				<button class="opacity-85 hover:opacity-100">
+					<img src="assets/images/icon-facebook.svg" alt="" />
+				</button>
+				<button class="opacity-85 hover:opacity-100">
+					<img src="assets/images/icon-twitter.svg" alt="" />
+				</button>
+				<button class="opacity-85 hover:opacity-100">
+					<img src="assets/images/icon-instagram.svg" alt="" />
+				</button>
+			</div>
+		</footer>
+	</body>
+</html>
